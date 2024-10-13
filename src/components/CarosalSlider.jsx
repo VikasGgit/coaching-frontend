@@ -49,11 +49,12 @@ const Carousel = ({ title }) => {
                 index === currentIndex ? 'opacity-100' : 'opacity-0'
               } flex flex-col items-center justify-center`}
             >
-              <img
-                src={course.image}
-                alt={course.courseName}
-                className="object-cover w-32 h-32 mb-4 rounded-full shadow-lg md:w-40 md:h-40"
-              />
+             <img
+  src={course.image}
+  alt={course.courseName}
+  className="object-cover h-32 mb-4 rounded-md shadow-lg w-60 md:w-80 md:h-48"
+/>
+
               <h3 className="mb-2 text-lg font-bold text-black md:text-xl">{course.courseName}</h3> {/* Font color changed to black */}
               
               <p className="px-6 mb-2 text-sm text-center text-black md:text-base md:px-12">For class : {course.class}</p> {/* Font color changed to black */}
